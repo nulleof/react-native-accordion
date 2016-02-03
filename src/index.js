@@ -7,7 +7,8 @@ var {
   StyleSheet,
   TouchableHighlight,
   View,
-  Text
+  Text,
+  Platform
 } = React;
 
 var Accordion = React.createClass({
@@ -112,7 +113,7 @@ var Accordion = React.createClass({
           }}
         >
           <View ref="AccordionContent">
-            {Platform.os === 'ios' || this.state.is_visible ? this.props.content: null}
+            {(Platform.OS === 'ios' || this.state.is_visible) ? this.props.content : null}
           </View>
         </View>
       </View>
