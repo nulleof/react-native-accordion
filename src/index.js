@@ -1,15 +1,15 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var tweenState = require('react-tween-state');
 
-var {
+import {
   StyleSheet,
   TouchableHighlight,
   View,
   Text,
   Platform
-} = React;
+} from 'react-native';
 
 var Accordion = React.createClass({
   mixins: [tweenState.Mixin],
